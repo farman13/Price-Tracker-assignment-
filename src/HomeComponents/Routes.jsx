@@ -3,7 +3,7 @@ import { Route } from 'react-router-dom';
 import { Routes } from 'react-router-dom';
 // import { Switch } from '@chakra-ui/react';
 
-import {About} from '../Pages/About';
+import { About } from '../Pages/About';
 import Pricing from '../Pages/Packages';
 import { SignUp } from '../LoginComponent/Signup';
 import { Services } from '../serviceComponents/Services';
@@ -12,22 +12,24 @@ import ServicesData from '../serviceComponents/ServicesData';
 import Home from '../Pages/Home';
 import MultiStepForm from '../serviceComponents/Pay';
 import Contact from '../Pages/Contact';
+import PriceTracker from '../Pages/PriceTracker';
 
 const AllRoutes = () => {
   return (
     <div>
       <Routes>
-        <Route path="/" element= { <Home/> } />
-        <Route path='/services' element={<Services />}/>
-        <Route path="/about" element={<About/>} />
-        <Route path="/packages" element={<Pricing/>} />
-        <Route path="/contact" element={<Contact/>} />
+        <Route path="/" element={<Home />} />
+        <Route path='/services' element={<Services />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/packages" element={<Pricing />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path='/signup' element={<SignUp />} />
         <Route path='/signin' element={<SignIn />} />
         <Route path='/servicesData' element={<ServicesData />} />
-        <Route path='/pay' element={<MultiStepForm/>} />
+        <Route path='/pay' element={<MultiStepForm />} />
+        <Route path='/priceTracker' element={<PriceTracker />} />
       </Routes>
-    </div> 
+    </div>
   );
 };
 
